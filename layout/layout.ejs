@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <%- partial('_partial/head') %>
+    <body>
+        <div class="paper">
+            <div class="paper-main">
+                <% if (is_post() || is_page()) { %>
+                    <%- partial('_partial/post-header') %>
+                <% } else { %>
+                    <%- partial('_partial/header') %>
+                <% } %>
+                <%- body %>
+                <div class="footer">
+                    <span>Copyright © 2022 <%= config.title %></span>
+                    <span>Theme Designed By <a target="_blank" href="https://zheli.design/one-paper">這Li</a></span>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
