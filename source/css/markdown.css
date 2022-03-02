@@ -3,6 +3,8 @@
 .post-md
 {
     width: 100%;
+    font-size: 0.875rem;
+    letter-spacing: 0;
 }
 .post-md h1
 {
@@ -45,7 +47,16 @@
 .post-md blockquote
 {
     width: 100%;
-    margin-bottom: 16px;
+}
+.post-md p,
+.post-md blockquote
+{
+    margin: 12px 0;
+}
+.post-md blockquote
+{
+    border-left: 2px solid var(--line-2);
+    padding-left: 12px;
 }
 .post-md a
 {
@@ -59,13 +70,20 @@
     box-shadow: 0 2px 0 var(--font-color-0);
     transition: color ease-in-out .65s, box-shadow ease-in-out .65s;
 }
-.post-md p strong
+.post-md strong
 {
     font-weight: 700;
 }
-.post-md p em
+.post-md em
 {
     font-style: italic;
+}
+.post-md kbd
+{
+    padding: 2px 4px;
+    border-radius: 2px;
+    background: #eee;
+    border: 1px solid #ddd;
 }
 .post-md ol
 {
@@ -77,46 +95,16 @@
     list-style: disc;
     padding-left: 24px;
 }
+.post-md img
+{
+    border-radius: 4px;
+}
 .post-md hr
 {
     border: none;
     height: 1px;
     background: var(--line-1);
     margin: 24px 0;
-}
-.post-md p code,
-.post-md figure
-{
-    font-size: 0.875rem;
-    background: #222;
-    border-radius: 8px;
-    color: #eee;
-    word-break: keep-all;
-    word-wrap: break-word;
-    white-space: pre-wrap;
-    overflow-x: scroll;
-}
-.post-md p code
-{
-    display: inline-block;
-    padding: 2px 8px;
-    position: relative;
-    top: 6px;
-}
-.post-md figure
-{
-    display: block;
-    padding: 4px 12px;
-    margin-bottom: 16px;
-}
-.post-md figure pre
-{
-    margin: 0;
-}
-.post-md figure .gutter .line
-{
-    margin-right: 8px;
-    opacity: .25;
 }
 .post-md>table
 {
@@ -126,18 +114,53 @@
 }
 .post-md>table th
 {
-    padding: 8px 0;
+    padding: 12px 0;
     border-bottom: 2px solid var(--line-1);
 }
 .post-md>table tr:nth-child(odd) td
 {
-    padding: 8px 0;
+    padding: 12px 0;
     border-bottom: 1px solid var(--line-1);
     background: #fafafa;
 }
 .post-md>table tr:nth-child(even) td
 {
-    padding: 8px 0;
+    padding: 12px 0;
     border-bottom: 1px solid var(--line-1);
     background: #fff;
+}
+.post-md pre code
+{
+    border-radius: 4px;
+}
+.post-md code:not(.hljs)
+{
+    background: #2b2b2b;
+    padding: 2px 4px;
+    border-radius: 4px;
+    color: #f8f8f2;
+}
+.post-md .hljs-ln-numbers
+{
+    opacity: .5;
+    padding-right: 8px;
+}
+.post-md pre ::selection
+{
+    background-color: #3c3c3c;
+}
+.post-md code:not(.hljs)::selection
+{
+    background-color: #3c3c3c;
+}
+.post-md .video-container
+{
+    background: #000;
+    border-radius: 4px;
+}
+.post-md .video-container iframe
+{
+    width: 100%;
+    height: 100vh;
+    max-height: 320px;
 }
