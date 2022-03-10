@@ -3,9 +3,11 @@
     <div class="post">
         <a class="post-title" href="<%- url_for(post.path) %>"><%= post.title %></a>
         <div class="post-except">
-            <%- strip_html(post.content).substr(0, 240) %>……
+            <%- strip_html(post.content).substr(0, 240) %>
+            <a class="read-more" href="<%- url_for(post.path) %>"> ... </a>
         </div>
         <div class="post-date"><%- date(post.date, "YYYY.MM.DD") %></div>
+        
     </div>
     <% }) %>
 </div>

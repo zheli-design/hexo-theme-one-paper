@@ -3,7 +3,10 @@
         <% page.posts.each(function (post) { %>
         <li>
             <span class="archive-date"><%= date(post.date, "YYYY.MM.DD") %></span>
-            <a class="archive-title" href="<%- url_for(post.path) %>"><%= post.title %></a>
+            <div class="archive-main">
+                <a class="archive-title" href="<%- url_for(post.path) %>"><%= post.title %></a>
+                <a class="read-more" href="<%- url_for(post.path) %>"> ... </a>
+            </div>
         </li>
         <% }) %>
     </ul>
