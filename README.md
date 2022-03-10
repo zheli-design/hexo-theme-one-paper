@@ -10,7 +10,7 @@
 
 ### 效果预览图
 
-![One-paper 预览图](https://raw.githubusercontent.com/zheli-design/hexo-theme-one-paper/main/source/img/one-paper-screenshot.jpg)
+![One-paper 预览图](https://raw.githubusercontent.com/zheli-design/hexo-theme-one-paper/main/source/img/one-paper.png)
 
 
 
