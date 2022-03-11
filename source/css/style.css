@@ -157,7 +157,7 @@ a
     line-height: 1.5;
     margin-bottom: 12px;
     color: var(--font-color-1);
-    transition: color ease-in-out .5s;
+    /*transition: color ease-in-out .5s;*/
 }
 .post-title:hover
 {
@@ -337,7 +337,7 @@ a
 .archive-title
 {
     color: var(--font-color-1);
-    transition: color ease-in-out .5s;
+    /*transition: color ease-in-out .5s;*/
 }
 .archive-title:hover
 {
