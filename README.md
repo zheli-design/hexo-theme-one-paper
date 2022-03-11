@@ -1,3 +1,7 @@
+![One-paper 预览图](https://raw.githubusercontent.com/zheli-design/hexo-theme-one-paper/main/source/img/one-paper.png)
+
+
+
 这是一个 [Hexo](https://hexo.io/) 主题，设计、开发于 2022 年 2 月。
 
 这是一个「小而美」的主题，实话说，它应该叫做「skin」而不是「theme」，可这又有什么所谓呢 :-)
@@ -5,12 +9,6 @@
 我不想把这个主题做成一个「大而全」的东西，它仅仅针对于 **写作**，你也可以理解为是 **传统意义上的博客**。主要是以 **朴素干净轻量** 为主。它的第一视觉效果是一张白纸，希望可以模拟在实体纸张阅读上的感受。
 
 功能上尽量与官方的靠齐，非必要不新增。
-
-
-
-### 效果预览图
-
-![One-paper 预览图](https://raw.githubusercontent.com/zheli-design/hexo-theme-one-paper/main/source/img/one-paper.png)
 
 
 
@@ -43,24 +41,18 @@
 
 ### 内置第三方字体
 
-主题内置了一个 [Google 字体 Montserrat](https://fonts.google.com/specimen/Montserrat)，如果不喜欢或有其他原因的，请删改以下内容：
+主题内置了一个 [Google 字体 Montserrat](https://fonts.google.com/specimen/Montserrat)，如果不喜欢或有其他原因的，请删改以下三处内容：
 
--   layout/_partial/head.ejs 中：
+1.   source/fonts 中的所有文件
+2.   source/css/fonts.css
+3.   source/css/style.css 中 line 21 的 `Montserrat`：
 
-    ```html
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
-    ```
-
--   source/css/style.css 中的 `Montserrat`：
-
-    ```css
-    body
-    {
-        font-family: "Montserrat", "SF UI Text", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Segoe UI", "Helvetica Neue", Helvetica, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-    }
-    ```
+```css
+body
+{
+    font-family: "Montserrat", "SF UI Text", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Segoe UI", "Helvetica Neue", Helvetica, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+}
+```
 
 
 
