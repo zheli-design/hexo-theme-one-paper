@@ -145,6 +145,7 @@ a
 }
 .post
 {
+    width: 100%;
     padding-bottom: 48px;
     margin-bottom: 48px;
     border-bottom: 1px dashed var(--line-2);
