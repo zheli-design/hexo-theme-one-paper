@@ -167,6 +167,7 @@ a
 }
 .post-except
 {
+    word-break: break-all;
     margin-bottom: 12px;
 }
 .read-more
