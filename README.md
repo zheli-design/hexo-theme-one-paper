@@ -73,7 +73,36 @@ prismjs:
 
 请同命名覆盖替换 source/img/favicon.png 图片。
 
+### 添加公式渲染功能
 
+1. 首先执行以下命令卸载掉hexo默认的渲染插件`hexo-renderer-marked` ，替换为`hexo-renderer-markdown-it-plus` 。
+
+    ```C++
+    npm un hexo-renderer-marked --save
+    npm i hexo-renderer-markdown-it-plus --save
+    ```
+
+2. 修改`hexo_root/scaffolds/post.md` 文件，在末尾添加一行 `math: true`。
+
+    之后当你执行`hexo new title`生成一篇新的文章时，文章内部默认配置如下所示：
+    ![20220616213508](https://s2.loli.net/2022/06/16/qt5NvLhundmMoce.png)
+
+    这样公式渲染默认是开启的，我们直接编写文章正文即可，如果想关闭数学公式支持，将`true`修改为`false`即可。
+    
+3. 在`根目录下`配置站点配置文件 `_config.yml`，在最后面加入如下配置：
+
+    ```C++
+    markdown_it_plus:
+      highlight: true
+      html: true
+      xhtmlOut: true
+      breaks: true
+      langPrefix:
+      linkify: true
+      typographer:
+      quotes: “”‘’
+      pre_class: highlight
+    ```
 
 ### 其他
 
