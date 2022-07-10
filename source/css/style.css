@@ -10,7 +10,8 @@
     --line-1: #ccc;
     --line-2: #ddd;
 }
-p
+p,
+li
 {
     word-wrap: break-word;
     white-space: pre-wrap;
@@ -318,6 +319,8 @@ a
     justify-content: flex-start;
     align-content: center;
     padding: 12px 0;
+    word-break: break-all;
+    white-space: normal;
 }
 .archive li:nth-child(odd)
 {
