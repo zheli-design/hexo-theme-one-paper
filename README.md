@@ -78,13 +78,13 @@ prismjs:
 ### 其他
 
 -   如果你觉得主题不错，欢迎分享出去；使用中遇到问题，可以在 [GitHub Issues](https://github.com/zheli-design/hexo-theme-one-paper/issues) 提交反馈；
--   如果你熟悉 Hexo、Wordpress 主题开发，正巧缺设计，也可以与我 [取得联系](https://zheli.design/contact.html)。
+-   如果你熟悉 Hexo、Wordpress 主题开发，正巧缺设计，也可以与我 [取得联系](https://zheli.design/)。
 
 
 
 ### 作者
 
-[這Li](https://zheli.design/)
+[這李設計](https://zheli.design/)
 
 
 
